@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import {AppComponent, Hero} from './app.component';
+import {AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
-
+import {HeroDetailComponent} from './hero-detail.component';
 
 @NgModule({
     imports: [
@@ -12,7 +12,8 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
         FormsModule // <-- import the FormsModule before binding with [(ngModel)]
     ],
     declarations: [
-        AppComponent
+        AppComponent,
+        HeroDetailComponent
     ],
     bootstrap: [ AppComponent ]
 })
